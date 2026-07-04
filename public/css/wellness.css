@@ -1,0 +1,169 @@
+/* ── Root variables ──────────────────────────────────────────────────────── */
+:root {
+  --mw-purple: #6f42c1;
+  --mw-purple-light: #e9e3f8;
+  --mw-green:  #198754;
+  --mw-orange: #fd7e14;
+  --mw-red:    #dc3545;
+  --mw-bg:     #f8f6ff;
+}
+
+body {
+  background-color: var(--mw-bg);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Navbar ──────────────────────────────────────────────────────────────── */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 1.3rem;
+}
+
+/* ── Stress level badges ─────────────────────────────────────────────────── */
+.badge-low      { background-color: var(--mw-green)  !important; color: #fff; }
+.badge-moderate { background-color: var(--mw-orange) !important; color: #fff; }
+.badge-high     { background-color: var(--mw-red)    !important; color: #fff; }
+
+/* ── Score display ───────────────────────────────────────────────────────── */
+.score-display {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ── Assessment question card ────────────────────────────────────────────── */
+.question-card {
+  border-left: 4px solid var(--mw-purple) !important;
+  border-radius: 0.5rem;
+}
+
+.question-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--mw-purple);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* Radio label styling */
+.answer-label {
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: 0.4rem;
+  padding: 0.35rem 0.75rem;
+}
+.answer-label:hover { background-color: var(--mw-purple-light); }
+input[type="radio"]:checked + .answer-label {
+  background-color: var(--mw-purple);
+  color: #fff;
+}
+
+/* ── Dashboard stat card ─────────────────────────────────────────────────── */
+.stat-card {
+  border-radius: 0.75rem;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+  transition: transform 0.15s;
+}
+.stat-card:hover { transform: translateY(-2px); }
+
+.stat-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* ── Wellness tip category header ────────────────────────────────────────── */
+.tip-category-header {
+  border-bottom: 2px solid var(--mw-purple);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--mw-purple);
+}
+
+/* ── Auth card ───────────────────────────────────────────────────────────── */
+.auth-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(111,66,193,.12);
+}
+
+.auth-brand {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--mw-purple);
+  letter-spacing: -0.02em;
+}
+
+/* ── Table ───────────────────────────────────────────────────────────────── */
+.table-hover tbody tr:hover {
+  background-color: rgba(111, 66, 193, 0.04);
+}
+
+/* ── Admin sidebar ───────────────────────────────────────────────────────── */
+.admin-sidebar {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+}
+
+.admin-sidebar .nav-link {
+  color: rgba(255,255,255,.75);
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.2rem;
+  transition: all 0.15s;
+}
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+  background-color: rgba(255,255,255,.12);
+  color: #fff;
+}
+.admin-sidebar .nav-link i {
+  width: 1.4rem;
+  text-align: center;
+}
+
+.admin-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+/* ── Recommendation card ─────────────────────────────────────────────────── */
+.rec-card {
+  border-left: 4px solid var(--mw-purple) !important;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.15s;
+}
+.rec-card:hover { box-shadow: 0 4px 16px rgba(111,66,193,.15); }
+.rec-card.low      { border-left-color: var(--mw-green)  !important; }
+.rec-card.moderate { border-left-color: var(--mw-orange) !important; }
+.rec-card.high     { border-left-color: var(--mw-red)    !important; }
+
+/* ── Pagination ──────────────────────────────────────────────────────────── */
+.page-link { color: var(--mw-purple); }
+.page-item.active .page-link {
+  background-color: var(--mw-purple);
+  border-color: var(--mw-purple);
+}
+
+/* ── Chart container ─────────────────────────────────────────────────────── */
+.chart-container { position: relative; }
+
+/* ── Utility ─────────────────────────────────────────────────────────────── */
+.text-purple { color: var(--mw-purple) !important; }
+.bg-purple   { background-color: var(--mw-purple) !important; }
+.border-purple { border-color: var(--mw-purple) !important; }

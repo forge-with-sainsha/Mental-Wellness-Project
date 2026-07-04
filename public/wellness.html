@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare — Wellness Tips</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/wellness.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-purple shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="/dashboard.html"><i class="bi bi-heart-pulse-fill me-2"></i>MindCare</a>
+      <a class="btn btn-outline-light btn-sm" href="#" onclick="logout()">
+        <i class="bi bi-box-arrow-right me-1"></i>Logout
+      </a>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <a href="/dashboard.html" class="text-muted small text-decoration-none">
+      <i class="bi bi-chevron-left me-1"></i>Dashboard
+    </a>
+    <h4 class="mt-2 fw-bold">Wellness Tips &amp; Activities</h4>
+    <p class="text-muted mb-4">Evidence-based strategies to support your mental well-being.</p>
+
+    <!-- Low Stress Section -->
+    <div class="mb-5">
+      <h5 class="tip-category-header">
+        <span class="badge badge-low me-2">Low Stress</span>Maintaining Your Well-being
+      </h5>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-journal-text text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Gratitude Journaling</h6>
+                <p class="text-muted small mb-0">Write 3 things you're grateful for each morning. A consistent practice reinforces a positive mindset.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-bicycle text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Regular Exercise</h6>
+                <p class="text-muted small mb-0">Light exercise like walking, cycling, or yoga at least 3 times per week boosts your mood and energy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-people-fill text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Social Connection</h6>
+                <p class="text-muted small mb-0">Nurture relationships with friends and family. Schedule regular check-ins to stay connected.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-trophy text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Goal Setting</h6>
+                <p class="text-muted small mb-0">Set small, achievable goals each week to maintain motivation and a sense of progress.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-moon-stars text-success fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Quality Sleep</h6>
+                <p class="text-muted small mb-0">Aim for 7–8 hours of consistent sleep each night to maintain emotional resilience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Moderate Stress Section -->
+    <div class="mb-5">
+      <h5 class="tip-category-header">
+        <span class="badge badge-moderate me-2">Moderate Stress</span>Stress Reduction Strategies
+      </h5>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-wind text-warning fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">4-7-8 Breathing</h6>
+                <p class="text-muted small mb-0">Inhale 4s → hold 7s → exhale 8s. Repeat 4 times. Activates your body's relaxation response instantly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-clock text-warning fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Pomodoro Technique</h6>
+                <p class="text-muted small mb-0">Study for 25 minutes then take a 5-minute break. Keeps focus high and prevents mental burnout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-phone-flip text-warning fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Digital Detox</h6>
+                <p class="text-muted small mb-0">Limit social media and screens to under 2 hours daily. Try app timers to enforce this boundary.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-chat-heart text-warning fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Talk It Out</h6>
+                <p class="text-muted small mb-0">Share how you're feeling with a trusted friend, family member, or student counselor. You don't have to go it alone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-peace text-warning fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Mindfulness Meditation</h6>
+                <p class="text-muted small mb-0">10 minutes of daily meditation using free apps like Insight Timer or Smiling Mind reduces cortisol levels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-person-walking text-warning fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Physical Activity</h6>
+                <p class="text-muted small mb-0">At least 30 minutes of physical activity, 3 times a week. Even a brisk walk significantly lowers stress hormones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- High Stress Section -->
+    <div class="mb-5">
+      <h5 class="tip-category-header">
+        <span class="badge badge-high me-2">High Stress</span>Advanced Coping &amp; Support
+      </h5>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3 border-danger" style="border-left:4px solid #dc3545!important">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-hospital text-danger fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Seek Professional Support</h6>
+                <p class="text-muted small mb-0">Contact a school counselor, therapist, or mental health professional. Taking this step is a sign of strength.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-building text-danger fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Student Support Services</h6>
+                <p class="text-muted small mb-0">Your institution may offer academic accommodations — deadline extensions, reduced load — to help during tough times.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-body-text text-danger fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Progressive Muscle Relaxation</h6>
+                <p class="text-muted small mb-0">Tense and release each muscle group from feet to forehead. 10 minutes daily significantly reduces physical tension.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-list-check text-danger fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Break Tasks Down</h6>
+                <p class="text-muted small mb-0">Break overwhelming tasks into the smallest possible steps. Focus on completing just one step at a time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-telephone-fill text-danger fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Crisis Support</h6>
+                <p class="text-muted small mb-0">If you feel overwhelmed or in crisis, reach out to a crisis helpline immediately. You matter and help is available.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-people text-danger fs-4 mt-1"></i>
+              <div>
+                <h6 class="fw-semibold">Peer Support Groups</h6>
+                <p class="text-muted small mb-0">Connect with peer support groups on campus or online. Shared experiences reduce isolation and build resilience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/wellness.js"></script>
+</body>
+</html>
